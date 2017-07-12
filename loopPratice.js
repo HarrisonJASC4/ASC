@@ -14,5 +14,5 @@ for (var i=0; i<10; i++);
 
 var Names = ["aditya","muhammad", "seti", "javen"];
 for (var i=0; i<5; i++);{
-    console.log(Names[i]);
+    console.log(Names);
 }
