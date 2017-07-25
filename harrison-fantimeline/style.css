@@ -1,0 +1,17 @@
+/*/*body{*/
+    background-image: url("http://static3.businessinsider.com/image/552fe5626da811634db27f83-480/kanye-west-time-magazine-cover-100-most-influential-people.jpg");*/
+    background-size: center;
+    background-position: center;
+    /*text-align: center;*/
+
+}
+
+#top{
+    background-color: lightblue;
+}
+
+img{
+    width: 100%;
+    vertical-align: middle;
+
+}
