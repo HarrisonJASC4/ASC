@@ -1,0 +1,50 @@
+#aboutme img{
+    max-width: 250px;
+    height: 500p;
+    background-size: contain;
+    object-fit: cover;
+}
+
+
+body{
+background: url("http://www.powerpointhintergrund.com/uploads/2017/06/notebook-paper-background-for-powerpoint-clipartsgram--1.jpeg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 0px 330px;
+
+
+}
+
+#pic img{
+    max-width: 1000px;
+    height: 1000px;
+}
+
+#welcome {
+/*how far away from left-side*/
+    padding-left: 250px;
+
+    padding-right: 100px ;
+    padding-top: 130px;
+}
+
+#text1{
+   /*padding-left: 110px;*/
+   margin-left: 250px;
+}
+
+
+
+#camera img{
+    margin-left: 600px;
+    margin-bottom: 100px;
+}
+
+#running img{
+    margin-left: 600px;
+    margin-bottom: 100px;
+}
+
+#hobby1{
+    margin-left: 300px;
+}

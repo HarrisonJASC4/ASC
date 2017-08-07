@@ -1,0 +1,59 @@
+.header{
+    background: url("http://wallpapercave.com/wp/jdCHkSa.jpg");
+    background-size: cover;
+}
+
+
+
+.body{
+    background: blue;
+
+}
+
+.jumbotron{
+    color: white; 
+    text-align: center;
+
+}
+
+/*Flickr*/
+.media1 img{
+  max-width: 50px;
+  max-height: 50px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right:  10;
+
+  
+}
+/*Linkedin*/
+.media2 img{
+    max-width: 50px;
+    max-height: 50px;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 5;
+    right: 5;
+
+}
+
+.ul{
+    margin: 0 auto;
+    float: right;
+    clear: both;
+    
+
+}
+
+/*Vimeo*/
+.media3 img{
+    max-width: 50px;
+    max-height: 50px;
+    position: fixed;
+}
+
+.row img{
+    
+}

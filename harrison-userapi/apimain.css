@@ -1,0 +1,12 @@
+.body.append{
+    text-align: center;
+}
+
+
+
+#fempic img{
+    border-radius: 40px;
+    background-size: 80px 60px;
+    width: 80px;
+    height: 80px;
+}

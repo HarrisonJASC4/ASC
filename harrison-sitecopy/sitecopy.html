@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>JDC Design Studio</title>
+
+<head>
+    <link rel="stylesheet" href="sitestyle.css">
+
+
+    <!-- Single button -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+
+        <!--1st social media tags-->
+        <div class="media1">
+            <div class="media-left">
+                <a href="#">
+      <img class="media-object" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Flickr_large_white_chiclet_logo_-_no_rounded_corners%2C_no_border.svg/768px-Flickr_large_white_chiclet_logo_-_no_rounded_corners%2C_no_border.svg.png" alt="...">
+    </a>
+
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Flickr</h4>
+                ...
+            </div>
+
+
+            <!--2nd social media tags-->
+            <div class="media2">
+                <div class="media-left">
+                    <a href="#">
+      <img class="media-object" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="...">
+    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Linkedin</h4>
+                    ...
+                </div>
+
+
+                <!--3rd social media tag-->
+
+                <div class="media3">
+                    <div class="media-left">
+                        <a href="#">
+      <img class="media-object" src="http://tallerpr.org/wp-content/uploads/2013/11/vimeo-logo1.jpg" alt="...">
+    </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Vimeo</h4>
+
+                    </div>
+
+                    <!--header// large title-->
+                    <div class="jumbotron">
+                        <h1>WEB DESIGNER/ FRONT-END DEVELOPER</h1>
+                        <p>Hello, I'm Jessie, specializing in web design, front-end development and digital media </p>
+                        <p>
+                    </div>
+
+
+
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <title>Bootstrap Example</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="FilmListContent" class="row">
+        <div class="span12">
+            <ul class="thumbnails">
+                @foreach (var film in Model.Films) {
+                <li class="span4">
+                    <div class="thumbnail">
+                        <a href="@Url.Action(" Details ", "Films ", new { id = film.ID })">
+                            <img src="@(String.Format("../../Content/Uploads/{0}.jpg", new object[] { FileUpload.CheckImageExists(Server.MapPath("~/Content/Uploads/"), film.ID) ? "Image_Film_" + film.ID : "NoImage" }))" alt="@film.Title image" />
+                            <span>
+                                @film.Title (@film.Year, @film.MediaType_Name) </span></a>
+                    </div>
+                </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid">
+        <h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p>
+    </div>
+
+</body>
+
+</html>
